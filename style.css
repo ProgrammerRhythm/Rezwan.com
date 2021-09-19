@@ -65,3 +65,15 @@
 .color2{
     color: #000;
 } 
+.size{
+    height: auto;
+    width: auto;
+    /* border: 10px solid sandybrown; */
+    position: relative;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+#img1:hover{
+    transform: scale(1.3);
+    transition: transform .5s ease-in-out;
+}
