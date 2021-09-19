@@ -75,5 +75,5 @@
 }
 #img1:hover{
     transform: scale(1.3);
-    transition: transform .5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
