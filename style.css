@@ -66,21 +66,21 @@
 .color2{
     color: #000;
 } 
-/* .size{
+.size{
     height: auto;
     width: auto;
-    /* border: 10px solid sandybrown; */
-    /* position: relative; */
-    /* border-radius: 10px; */
-    /* overflow: hidden; */
-    /* margin-bottom: 20px; */
-    /* margin-right: 20px; */
+    border: 10px solid sandybrown; 
+    position: relative; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    margin-bottom: 20px; 
+    margin-right: 20px; 
 
-/* } */ 
-/* #img1:hover{
+} 
+#img1:hover{
     transform: scale(1.5);
     transition: transform 1s ease-in-out;
-} */
-/* .padding{
+} 
+.padding{
     margin-right: 7px;
-} */
+}
