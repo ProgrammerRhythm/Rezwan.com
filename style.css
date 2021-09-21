@@ -67,20 +67,19 @@
     color: #000;
 } 
 .size{
-    height: auto;
-    width: auto;
-    /* border: 10px solid sandybrown;  */
+    height: 100%;
+    width: 100%;
     position: relative; 
-    /* border-radius: 10px;  */
     overflow: hidden; 
-    margin-bottom: 20px; 
-    /* margin-right: 20px;  */
 
 } 
-#img1:hover{
+.size img{
+    margin-bottom: 30px;
+}
+/* #img1:hover{
     transform: scale(1.5);
     transition: transform 1s ease-in-out;
-} 
-.padding{
+}  */
+/* .padding{
     margin-right: 7px;
-}
+} */
