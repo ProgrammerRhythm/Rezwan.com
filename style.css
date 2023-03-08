@@ -42,6 +42,16 @@
 .hr{
     border: 1px solid black;
 }
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    /* max-width: ; */
+}
 .fa {
     /* padding: 10px; */
     font-size: 20px;
@@ -70,23 +80,15 @@
     color: #000;
 }
 
-.image-box {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    
-}
-.image-box img {
-    max-width: 100%;
-    transition: all 0.8s;
-    display: block;
+.image-box{
     width: 100%;
-    height: auto;
-    transform: scale(1);
+    height: 100%;
+    overflow: hidden;
 }
-
-.image-box:hover img {
-    transform: scale(1.3);
+.nextImg{
+    overflow: hidden;
+    transition: .5s;
 }
-
-
+.nextImg:hover {
+    transform: scale(1.1);
+}

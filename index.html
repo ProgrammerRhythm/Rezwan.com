@@ -16,27 +16,29 @@
 </head>
 <body>
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand animate__animated animate__backInLeft" href="#"><img class="img-fluid"  src="images/Logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end animate__animated animate__backInRight" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link style" aria-current="page" href="#">Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link style" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link style" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand animate__animated animate__backInLeft" href="#"><img class="img-fluid"  src="images/Logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end animate__animated animate__backInRight" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link style" aria-current="page" href="#">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link style" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link style" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     </div>
     <div class="container">
     <section class="introduce animate__animated animate__fadeInDown">
@@ -47,34 +49,35 @@
     </div>
     <div class="container">
         <div class="row bro">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 animate__animated animate__backInLeft">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 animate__animated animate__backInLeft hidden">
                 <div class="image-box">
-                <img style="width: 100%; margin-bottom: 20px;" src="images/image1.jpg" alt="">  
+                    
+                <img class="nextImg" style="width: 100%;" src="images/image1.jpg" alt="">
             </div>         
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 justify-content-end animate__animated animate__backInRight">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 justify-content-end animate__animated animate__backInRight hidden">
                 <div class="image-box">
-                <img style="width: 100%; margin-bottom: 20px;" src="images/image2.jpg" alt="">
+                <img class="nextImg" style="width: 100%;" src="images/image2.jpg" alt="">
             </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 animate__animated animate__backInLeft">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 animate__animated animate__backInLeft hidden">
                 <div class="image-box">
-                <img style="width: 100%; margin-bottom: 20px;" src="images/image3.jpg" alt="">
+                <img class="nextImg" style="width: 100%;" src="images/image3.jpg" alt="">
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 justify-content-end animate__animated animate__backInRight">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 justify-content-end animate__animated animate__backInRight hidden">
                 <div class="image-box">
-                <img style="width: 100%; margin-bottom: 20px;" src="images/image4.png" alt="">
+                <img class="nextImg" style="width: 100%;" src="images/image4.png" alt="">
             </div> 
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 animate__animated animate__backInLeft">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 animate__animated animate__backInLeft hidden">
                 <div class="image-box">
-                <img style="width: 100%; margin-bottom: 20px;" src="images/image5.jpg" alt="">
+                <img class="nextImg" style="width: 100%;" src="images/image5.jpg" alt="">
             </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-5 justify-content-end animate__animated animate__backInRight">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 justify-content-end animate__animated animate__backInRight hidden">
                 <div class="image-box">
-                <img style="width: 100%; margin-bottom: 20px;" src="images/image6.jpg" alt="">
+                <img class="nextImg" style="width: 100%;" src="images/image6.jpg" alt="">
             </div>
             </div>
         </div>
@@ -112,6 +115,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+
+        })
+    </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
